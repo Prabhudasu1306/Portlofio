@@ -1,0 +1,137 @@
+
+#projects {
+  padding: 80px 20px;
+   background: #0d1b2a; 
+  color: #e0e1dd;
+}
+
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  color: #ffd700; /* gold accent */
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-title p {
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+   background: #0d1b2a; 
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(255, 215, 0, 0.25); 
+  border-color: #ffd700;
+}
+
+.project-title {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.project-description {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.description-list {
+  margin: 0 0 15px 20px;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.project-tech h4,
+.project-features h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #ffd700;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-pill {
+  background: #262626;
+  color: #ffd700;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #444;
+}
+
+.feature-list {
+  margin-left: 20px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.project-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffd700;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.project-link:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #ffd700, #ffb700);
+  color: #0d0d0d;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn.btn-primary:hover {
+  background: linear-gradient(90deg, #ffb700, #ffd700);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

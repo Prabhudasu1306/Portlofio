@@ -1,0 +1,94 @@
+
+.hero {
+  padding: 100px 20px;
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  text-align: center;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .container {
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffd700; 
+  text-transform: uppercase;
+}
+
+.hero .professional-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #f0c040; 
+  margin-bottom: 10px;
+}
+
+.hero .hero-subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #ffd700, #ffb700);
+  color: #0d0d0d; 
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #ffb700, #ffd700);
+}
+
+.btn-outline {
+  border: 2px solid #ffd700;
+  color: #ffd700;
+}
+
+.btn-outline:hover {
+  background: #ffd700;
+  color: #0d0d0d;
+}
+
+.hero i {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero .professional-title {
+    font-size: 1.3rem;
+  }
+  .hero .hero-subtitle {
+    font-size: 1rem;
+  }
+}

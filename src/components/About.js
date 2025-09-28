@@ -33,6 +33,7 @@ const About = () => {
 
     return () => {
       if (statsRef.current) {
+         // eslint-disable-next-line
         statsObserver.unobserve(statsRef.current);
       }
     };

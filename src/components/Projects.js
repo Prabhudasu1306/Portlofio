@@ -189,7 +189,6 @@ const Projects = () => {
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
 
-                {/* Handle description as array or string */}
                 {Array.isArray(project.description) ? (
                   <ul className="description-list">
                     {project.description.map((desc, dIndex) => (
@@ -200,7 +199,6 @@ const Projects = () => {
                   <p className="project-description">{project.description}</p>
                 )}
 
-                {/* Tech Stack */}
                 {project.tech && (
                   <div className="project-tech">
                     <h4>Tech Stack</h4>
@@ -212,7 +210,6 @@ const Projects = () => {
                   </div>
                 )}
 
-                {/* Features */}
                 {project.features && (
                   <div className="project-features">
                     <h4>Key Functionalities</h4>
@@ -240,9 +237,7 @@ const Projects = () => {
                       </a>
                     </>
                   )}
-                  <a href={project.demo} className="project-link">
-                    <i className="fas fa-external-link-alt"></i> Live Demo
-                  </a>
+                
                 </div>
               </div>
             </div>
